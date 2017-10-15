@@ -13,19 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <FrameLayout
-            android:id="@+id/photo_container"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/theme_accent">
-            <!--suppress AndroidLintContentDescription -->
-            <ImageView
-                android:id="@+id/photo"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                 />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/photo_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:background="@color/theme_accent">-->
+            <!--&lt;!&ndash;suppress AndroidLintContentDescription &ndash;&gt;-->
+            <!--<ImageView-->
+                <!--android:id="@+id/photo"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                 <!--/>-->
 
-        </FrameLayout>
+        <!--</LinearLayout>-->
 
         <com.example.xyzreader.ui.MaxWidthLinearLayout
             android:orientation="vertical"
@@ -33,9 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:maxWidth="@dimen/detail_card_max_width"
-            android:background="#fff"
-            android:elevation="1dp"
-            android:layout_marginTop="@dimen/detail_card_top_margin">
+            android:background="#fff">
 
             <LinearLayout
                 android:id="@+id/meta_bar"
@@ -60,14 +58,14 @@
                     android:textColor="#fff"
                     android:textStyle="bold"
                     android:textSize="@dimen/detail_title_text_size"
-                    android:lineSpacingMultiplier="0.9" />
+                    android:lineSpacingMultiplier="1" />
 
                 <TextView
                     android:id="@+id/article_byline"
                     style="?android:attr/textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#8fff" />
+                    android:textColor="#fff" />
             </LinearLayout>
 
             <TextView
